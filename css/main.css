@@ -54,13 +54,26 @@ h2 {
 }
 
 .container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .page-header__container {
@@ -219,34 +232,89 @@ h2 {
 }
 
 .hero__container {
-  width: 1200px;
-  padding: 200px 15px;
+  padding: 118px 15px;
+  min-width: 320px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
+@media (min-width: 480px) {
+  .hero__container {
+    padding: 118px 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__container {
+    max-width: 768px;
+    padding: 118px 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__container {
+    max-width: 1200px;
+    padding: 200px 15px;
+  }
+}
+
 .hero__container-image {
   max-width: 1600px;
-  height: 600px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-hero)), to(var(--linear-hero))), url(../images/hero-image.jpg);
-  background-image: linear-gradient(to right, var(--linear-hero), var(--linear-hero)), url(../images/hero-image.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-hero)), to(var(--linear-hero))), url(../images/hero-img-mob.jpg);
+  background-image: linear-gradient(to right, var(--linear-hero), var(--linear-hero)), url(../images/hero-img-mob.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+@media (min-width: 768px) {
+  .hero__container-image {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-hero)), to(var(--linear-hero))), url(../images/hero-img-tab.jpg);
+    background-image: linear-gradient(to right, var(--linear-hero), var(--linear-hero)), url(../images/hero-img-tab.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__container-image {
+    min-height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-hero)), to(var(--linear-hero))), url(../images/hero-image.jpg);
+    background-image: linear-gradient(to right, var(--linear-hero), var(--linear-hero)), url(../images/hero-image.jpg);
+  }
+}
+
 .hero__title {
-  width: 700px;
   margin: 0 auto 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text);
+}
+
+@media (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .hero__button {
