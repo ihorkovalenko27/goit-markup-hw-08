@@ -1,0 +1,64 @@
+.sign-up-container {
+  margin-left: 93px;
+}
+
+.sign-up-container__text {
+  align-items: baseline;
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
+.form-telegram {
+  display: flex;
+  align-items: center;
+}
+
+.form-telegram__input {
+  width: 358px;
+  height: 50px;
+  margin: 0;
+  padding: 15px 16px;
+
+  background-color: inherit;
+  color: var(--white-text);
+  border: 1px solid var(--bordergram);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition-property: outline;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubik-normal);
+}
+
+.form-telegram__btn {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 29px;
+  margin-left: 12px;
+
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--blue);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  cursor: pointer;
+}
+
+.form-telegram__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

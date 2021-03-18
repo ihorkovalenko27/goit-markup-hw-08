@@ -1,0 +1,117 @@
+.modal-form__title {
+  margin: 0 0 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.modal-form__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-form__label {
+  margin-bottom: 4px;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--grey-text);
+}
+
+.modal-form__input {
+  width: 100%;
+  padding: 12px 42px;
+
+  border: 1px solid var(--border-form);
+  border-radius: 4px;
+  font-family: inherit;
+
+  transition-property: border;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubik-normal);
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--blue);
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:focus + .modal-form__icon,
+  &:hover + .modal-form__icon {
+    fill: var(--blue);
+  }
+}
+
+.modal-form__wrapper {
+  position: relative;
+}
+
+.modal-form__icon {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  transition-property: fill;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubik-normal);
+}
+
+.modal-form__container--area {
+  margin-bottom: 20px;
+}
+
+.modal-form__comment {
+  max-width: 100%;
+  padding: 12px 16px;
+
+  resize: none;
+
+  font-family: inherit;
+
+  border-radius: 4px;
+  border: 1px solid var(--border-form);
+
+  transition-property: border;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubik-normal);
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--blue);
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.modal-form__comment::-moz-placeholder {
+  padding-top: 10px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17px;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-form);
+}
+
+.modal-form__comment::-webkit-input-placeholder {
+  padding-top: 10px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17px;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-form);
+}
