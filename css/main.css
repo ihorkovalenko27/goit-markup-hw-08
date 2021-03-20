@@ -1210,22 +1210,45 @@ h2 {
   }
 }
 
-.example-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0;
-  margin-left: -30px;
-  margin-top: -30px;
+@media (min-width: 768px) {
+  .example-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .example-list__item {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
+}
+
+.example-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .example-list__item {
+    width: 354px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .example-list__item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media (min-width: 1200px) {
+  .example-list__item {
+    width: 370px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .example-list__card {
@@ -1252,12 +1275,29 @@ h2 {
   opacity: 1;
 }
 
+@media (min-width: 768px) {
+  .example-list__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .example-list__thumb {
   position: relative;
   overflow: hidden;
   display: block;
   max-width: 100%;
-  height: auto;
+}
+
+@media (min-width: 480px) {
+  .example-list__thumb {
+    width: 450px;
+  }
 }
 
 .example-list__overlay {
@@ -1279,7 +1319,7 @@ h2 {
 .example-list__text {
   position: absolute;
   margin: 0;
-  top: 63px;
+  top: 10px;
   left: 24px;
   bottom: 63px;
   right: 24px;
@@ -1290,9 +1330,23 @@ h2 {
   color: var(--white);
 }
 
+@media (min-width: 480px) {
+  .example-list__text {
+    top: 63px;
+  }
+}
+
 .example-list__content {
   padding: 20px 25px;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .example-list__content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .example-list__title {
