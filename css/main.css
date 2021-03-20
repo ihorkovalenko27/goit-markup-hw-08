@@ -553,10 +553,6 @@ h2 {
   width: 100%;
 }
 
-.team-list__item:last-child {
-  margin-right: 0px;
-}
-
 .team-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -659,42 +655,85 @@ h2 {
 }
 
 .clients__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .clients__container {
+    padding-bottom: 95px;
+    padding-top: 95px;
+  }
 }
 
 .clients__title {
+  margin-bottom: 30px;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  color: var(--black-text);
 }
 
-.client-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 480px) {
+  .client-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .client-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 30px;
+  width: 100%;
+  height: 90px;
 }
 
-.client-list__item:last-child {
-  margin-right: 0;
+.client-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 480px) {
+  .client-list__item {
+    width: 210px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .client-list__item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media (min-width: 480px) and (min-width: 768px) {
+  .client-list__item {
+    width: 226px;
+  }
+}
+
+@media (min-width: 480px) and (min-width: 1200px) {
+  .client-list__item {
+    width: 170px;
+  }
 }
 
 .client-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   color: var(--icons);
   border: 1px solid var(--icons);
   border-radius: 4px;
