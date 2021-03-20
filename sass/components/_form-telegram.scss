@@ -8,7 +8,6 @@
 }
 
 .sign-up-container__text {
-  // align-items: baseline;
   margin-bottom: 20px;
   margin-top: 0;
 
@@ -53,7 +52,7 @@
   transition-duration: var(--time);
   transition-timing-function: var(--cubik-normal);
 
-  @media (min-width: 768px) {
+  @media (min-width: 480px) {
     width: 450px;
   }
 
