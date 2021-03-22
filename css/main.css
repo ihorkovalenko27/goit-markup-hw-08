@@ -1506,10 +1506,24 @@ h2 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 250px;
+  min-height: 400px;
   padding: 40px;
   background-color: var(--white);
+}
+
+@media (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__btn {
@@ -1704,10 +1718,22 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 5px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--grey-text);
+}
+
+@media (min-width: 480px) {
+  .checkbox__label {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -1730,13 +1756,25 @@ h2 {
   color: var(--blue);
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 7px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
 .checkbox__link__link:focus {
   color: var(--blue);
+}
+
+@media (min-width: 480px) {
+  .checkbox__link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+  }
 }
 
 .modal-form__submit {

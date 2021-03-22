@@ -29,10 +29,18 @@
   align-items: center;
 
   font-weight: normal;
-  font-size: 14px;
+  font-size: 5px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--grey-text);
+
+  @media (min-width: 480px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -54,12 +62,20 @@
   color: var(--blue);
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 7px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 
   &__link:focus {
     color: var(--blue);
+  }
+
+  @media (min-width: 480px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 
