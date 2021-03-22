@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
         <div class="container page-header__container">
             <nav class="nav">
             <a href="index.html" class="logo"> <span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+            <svg class="nav__burger js-open-menu">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
                 <ul class="nav__list">
                     <li class="nav__item"> <a href="index.html" class="nav__link">Студия</a></li>
                     <li class="nav__item"> <a href="#" class="nav__link nav__link--active">Портфолио</a></li>
@@ -43,7 +46,7 @@
                 </li>
             </ul>
         </div>
-    </header> -->
+    </header>
     <main>
        <!-- Портфолио -->
         
@@ -77,7 +80,7 @@
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
                             </div>
-                           <div class="example-list__content">
+                           <div class="example-list__content example-list__content--height">
                                 <h2 class="example-list__title">Технокряк</h2>
                                 <p class="example-list__kinds">Веб-сайт</p>
                            </div>
@@ -301,6 +304,72 @@
         
             </div>
         </footer>
+
+        <div class="menu-container js-menu-container">
+            <button class="mobile-btn js-close-menu">
+                <svg class="close-mobile" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-icon" />
+                </svg>
+            </button>
+        
+            <ul class="mobile-nav">
+                <li class="mobile-nav__item">
+                    <a href="./index.html" class="mobile-nav__link">Студия</a>
+                </li>
+        
+                <li class="mobile-nav__item">
+                    <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--current">Портфолио</a>
+                </li>
+        
+                <li class="mobile-nav__item">
+                    <a href="#" class="mobile-nav__link">Контакты</a>
+                </li>
+            </ul>
+        
+            <div class="mobile-contacts">
+                <ul class="mobile-contacts__list">
+                    <li class="mobile-contacts__item">
+                        <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--tel">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+        
+                    <li class="mobile-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="mobile-contacts__link mobile-contacts__link--mail">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+        
+                <ul class="mobile-social">
+                    <li class="mobile-social__item">
+                        <a href="#" class="mobile-social__link">
+                            Instagram
+                        </a>
+                    </li>
+        
+                    <li class="mobile-social__item">
+                        <a href="#" class="mobile-social__link">
+                            Twitter
+                        </a>
+                    </li>
+        
+                    <li class="mobile-social__item">
+                        <a href="#" class="mobile-social__link">
+                            Facebook
+                        </a>
+                    </li>
+        
+                    <li class="mobile-social__item">
+                        <a href="#" class="mobile-social__link">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>
