@@ -65,6 +65,11 @@
   }
 }
 
+.example-list__thumb img {
+  height: 294px;
+  object-fit: cover;
+}
+
 .example-list__overlay {
   position: absolute;
   bottom: 0;
@@ -88,7 +93,7 @@
   right: 24px;
 
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 
@@ -99,8 +104,6 @@
     left: 24px;
     bottom: 77px;
     right: 24px;
-
-    font-size: 22px;
   }
 
   @media (min-width: 768px) {
